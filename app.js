@@ -15,3 +15,7 @@ const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+app.get("/", (req, res) => {
+  res.send("School Management API is running");
+});
